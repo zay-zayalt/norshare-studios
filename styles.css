@@ -207,13 +207,51 @@ h1 {
   gap: 10px;
 }
 
-.update-empty {
+.update-card {
   padding: 16px 18px;
-  border: 1px dashed rgba(68, 255, 134, 0.22);
+  border: 1px solid rgba(68, 255, 134, 0.2);
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.02);
-  color: rgba(232, 247, 235, 0.74);
-  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+  text-align: left;
+}
+
+.update-card h3 {
+  margin: 0 0 8px;
+  color: var(--accent-strong);
+  font-size: 1rem;
+}
+
+.update-card p {
+  margin: 0 0 12px;
+  color: rgba(232, 247, 235, 0.8);
+  line-height: 1.6;
+}
+
+.update-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.discord-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(47, 191, 100, 0.16);
+  border: 1px solid rgba(68, 255, 134, 0.28);
+  color: var(--accent-strong);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.discord-link:hover {
+  transform: translateY(-1px);
+  background: rgba(47, 191, 100, 0.24);
 }
 
 .discord-hero {
